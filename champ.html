@@ -17,9 +17,9 @@
     <nav class="navbar navbar-expand-lg navbar-light topNav">
         <a class="navbar-brand d-flex navLogo" href="#" class="img-fluid">
             <img src="images/3d.png" alt="logo">
-            <h1>Orchestly</h1>
+            <h1>NaN</h1>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -85,18 +85,98 @@
     <div class="content">
 
         <!-- navbar content -->
-        <ul class="nav navbar-content">
-            <li class="nav-item">
-                <a class="nav-link link2" href="index.html">Layouts</a>
-            </li>
-            <li class="nav-item  link1">
-                <a class="nav-link" href="champ.html">Champs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link link2" href="#">Modèles d'e-mails</a>
-            </li>
-            <button class="btn-nav-content ml-auto">Ajouter le champs</button>
-        </ul>
+        <div class="navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="nav navbar-content">
+                    <li class="nav-item">
+                        <a class="nav-link link2" href="index.html">Layouts</a>
+                    </li>
+                    <li class="nav-item link1">
+                        <a class="nav-link" href="champ.html">Champs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link2" href="#">Modèles d'e-mails</a>
+                    </li>
+                    <div class=" ml-auto">
+                        <button class="btn-nav-content">Ajouter un champ</button>
+                        <!-- Ma Side Bar -->
+                        <div class="sideBar">
+                            <div class="sideTitle">
+                                <h2>Ajouter un Layout</h2>
+                            </div>
+                            <hr>
+                            <div class="container">
+                                <div class="form">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <label for="nom" class="col-4">Nom du Layout<span>*</span></label>
+                                                    <select name="" id="" class="col-2">
+                                                        <option value="Img">Setting</option>
+                                                        <option value="Img">Setting</option>
+                                                        <option value="Img">Setting</option>
+                                                        <option value="Img">Setting</option>
+                                                    </select>
+                                                <input id="nom" type="text" class="col-6">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <label for="des" class="col-4">Description</label>
+                                                    <input id="desc" type="text" class="col-8">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <label for="ide" class="col-4">Préfixe de l'ID...</label>
+                                                    <input id="ide" type="text" class="col-8">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <label for="aut" class="col-4">Autorisations</label>
+                                                    <p class="col-8">Qui peut afficher Jobs dans ce Layout ?</p>
+                                                    <input id="aut" type="text" class="col-8 ml-auto">
+                                                </div>
+                                            </div>
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <p class="col-8 ml-auto">Qui peut ajouter Jobs à ce Layout ?</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 contenu">
+                                                <div class="row">
+                                                    <div class="col-8 ml-auto radio d-flex">
+                                                        <p>
+                                                            <input type="radio" id="test1" name="radio-group" checked>
+                                                            <label for="test1">Org users</label>
+                                                        </p>
+                                                        <p>
+                                                            <input type="radio" id="test2" name="radio-group">
+                                                            <label for="test2">Specific users</label>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="contenu valid">
+                                            <div class="button">
+                                                <a href="#"><button type="submit" class="btn-save">Enregistrer</button></a>
+                                                <a href="#"><button type="reset" class="btn-reset">Annuler</button></a>
+                                            </div>
+                                        </div>
+                                    </form>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
 
         <!-- info bloc -->
         <div class="bloc-info">
@@ -110,7 +190,7 @@
             </p>
         </div>
     <!-- tables -->
-    <table class="table">
+        <table class="table">
             <thead>
                 <tr>
                     <th scope="col" class="table-title">NOM DE CHAMP</th>
@@ -222,6 +302,7 @@
     <!-- script -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
